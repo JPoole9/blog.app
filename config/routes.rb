@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'users/:id' => 'users#show'
+  
+
   get 'static_pages/home'
   #if the HTTP verb is a get
   #and the path of the URL looks like 'static_pages/home'
